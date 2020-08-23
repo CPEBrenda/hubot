@@ -1,7 +1,10 @@
 'use strict'
 
 /* global describe, beforeEach, it, afterEach */
+<<<<<<< HEAD
 /* eslint-disable no-unused-expressions */
+=======
+>>>>>>> origin/evolution/4/javascript-tests
 
 // Assertions and Stubbing
 const chai = require('chai')

@@ -1,7 +1,10 @@
 'use strict'
 
 /* global describe, beforeEach, afterEach, it */
+<<<<<<< HEAD
 /* eslint-disable no-unused-expressions */
+=======
+>>>>>>> origin/evolution/4/javascript-tests
 
 // Assertions and Stubbing
 const chai = require('chai')
@@ -10,8 +13,11 @@ chai.use(require('sinon-chai'))
 
 const expect = chai.expect
 
+<<<<<<< HEAD
 const isCircular = require('is-circular')
 
+=======
+>>>>>>> origin/evolution/4/javascript-tests
 // Hubot classes
 const Brain = require('../src/brain')
 const User = require('../src/user')
@@ -60,6 +66,7 @@ describe('Brain', function () {
         this.brain.mergeData({})
         expect(this.brain.emit).to.have.been.calledWith('loaded', this.brain.data)
       })
+<<<<<<< HEAD
 
       it('coerces loaded data into User objects', function () {
         this.brain.mergeData({users: {'4': {'name': 'new', 'id': '4'}}})
@@ -69,6 +76,8 @@ describe('Brain', function () {
         expect(user.name).to.equal('new')
         expect(isCircular(this.brain)).to.be.false
       })
+=======
+>>>>>>> origin/evolution/4/javascript-tests
     })
 
     describe('#save', () => it('emits a save event', function () {
@@ -319,6 +328,7 @@ describe('Brain', function () {
       expect(result).to.have.members([this.user1, this.user2])
       expect(result).to.not.have.members([this.user3])
     })
+<<<<<<< HEAD
 
     it('returns User objects, not POJOs', function () {
       expect(this.brain.userForId('1').constructor.name).to.equal('User')
@@ -332,5 +342,7 @@ describe('Brain', function () {
 
       expect(isCircular(this.brain)).to.be.false
     })
+=======
+>>>>>>> origin/evolution/4/javascript-tests
   })
 })

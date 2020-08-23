@@ -1,7 +1,10 @@
 'use strict'
 
 /* global describe, beforeEach, it, afterEach */
+<<<<<<< HEAD
 /* eslint-disable no-unused-expressions */
+=======
+>>>>>>> origin/evolution/4/javascript-tests
 
 // Assertions and Stubbing
 const chai = require('chai')
@@ -418,6 +421,7 @@ describe('Robot', function () {
           expect(this.robot.logger.warning).to.have.been.called
         })
       })
+<<<<<<< HEAD
 
       describe('unsupported file extension', function () {
         beforeEach(function () {
@@ -488,6 +492,8 @@ describe('Robot', function () {
         this.robot.emit('event', function () {})
         expect(this.robot.events.emit).to.have.been.calledOn(this.robot.events)
       })
+=======
+>>>>>>> origin/evolution/4/javascript-tests
     })
   })
 
